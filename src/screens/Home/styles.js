@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet, Dimensions, Platform } from 'react-native';
 
 const styles = StyleSheet.create({
 
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
 
   searchButton: {
     backgroundColor: '#fff',
-    height: 60,
+    height: 50,
     width: Dimensions.get('screen').width - 20,
     borderRadius: 30,
     marginHorizontal: 10,
@@ -45,8 +45,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
-    top: 20,
-    zIndex: 100,
+    top: 30,
+    zIndex: 1,
+    elevation: (Platform.OS === 'android') ? 50:0
 
 
   },
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold'
 
-  },
+  }
 
 });
 
