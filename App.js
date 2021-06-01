@@ -11,7 +11,9 @@ export default function App() {
     <>
     <StatusBar barStyle="dark-content" />
     <SafeAreaView>
-      {/* <HomeScreen /> */}
+      <HomeScreen />
+      <Post />
+      <Post />
       <Post />
     </SafeAreaView>
     </>
