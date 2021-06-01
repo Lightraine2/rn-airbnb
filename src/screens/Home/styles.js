@@ -46,7 +46,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     position: 'absolute',
     top: 30,
-    zIndex: 1,
     elevation: (Platform.OS === 'android') ? 50:0
 
 

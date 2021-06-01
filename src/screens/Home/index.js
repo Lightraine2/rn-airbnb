@@ -14,8 +14,8 @@ const HomeScreen = (props) => {
 
       <Pressable 
       style={styles.searchButton} 
-      onPress={() => console.warn('search button press')}
-      > 
+      onPress={() => console.warn('search button press')}>
+         
       <Fontisto name="search" size={25} color={"#f15454"} />
         <Text style={styles.searchButtonText}>
           Where are you going?</Text>
@@ -33,7 +33,7 @@ const HomeScreen = (props) => {
         <Text style={styles.buttonText}>Explore nearby places</Text>
       </Pressable>
       </ImageBackground>
-      <Text> A component </Text>
+
     </View>
   );
 };
