@@ -5,6 +5,7 @@ import Entype from 'react-native-vector-icons/Entypo';
 
 import HomeScreen from './src/screens/Home/index'
 import SearchResultsScreen from './src/screens/SearchResults/index'
+import DestinationSearchScreen from './src/screens/DestinationSearch/index'
 //import HomeScreen from './src/screens/Home/index'
 import Post from './src/components/Post/index'
 
@@ -18,8 +19,8 @@ export default function App() {
     <StatusBar barStyle="dark-content" />
     <SafeAreaView>
       {/* <HomeScreen /> */}
-      {/* <Post post={post1}/> */}
-      <SearchResultsScreen />
+      <DestinationSearchScreen />
+      {/* <SearchResultsScreen /> */}
     </SafeAreaView>
     </>
   );
