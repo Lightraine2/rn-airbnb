@@ -6,15 +6,19 @@ import Entype from 'react-native-vector-icons/Entypo';
 import HomeScreen from './src/screens/Home/index'
 import Post from './src/components/Post/index'
 
+import feed from './assets/data/feed'
+
+const post1 = feed[0];
+
 export default function App() {
   return (
     <>
     <StatusBar barStyle="dark-content" />
     <SafeAreaView>
-      <HomeScreen />
-      <Post />
-      <Post />
-      <Post />
+      {/* <HomeScreen /> */}
+      <Post post={post1}/>
+      {/* <Post />
+      <Post /> */}
     </SafeAreaView>
     </>
   );
